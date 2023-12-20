@@ -1,0 +1,83 @@
+
+<!-- <div class="container">
+   <h2>Hello!</h2>
+   <button [textColor]="color" appDemoDirective>Yellow</button>
+   <button [textColor]="color' appDemoDirective>Green</button>
+  <button></button>
+</div>
+
+
+<br><br>
+ -->
+
+
+
+
+
+
+
+
+
+<p class="text-center">hello {{ courseName }}</p>
+
+
+{{ courseName.substr(3,4) }}
+
+ 
+    <h1>hello {{ courseName }}</h1>
+    <br>
+    <button (click)="changeCourse()">Change this course</button>
+    <br>
+    <input type="text" placeholder="Enter any course" #cName>
+    <br>
+    <button (click)="newChangeCourse(cName.value)"></button>
+
+<br><br>
+
+
+   <div class="container" style="background-color: darksalmon;">
+    <h2 class="text-center">Login</h2>
+    <div class="form-group">
+        <label class="form-label">Username:</label>
+        <input type="text" name="username" class="form-control" [(ngModel)]="username" >
+    </div>
+    <br>
+    <div class="form-group">
+        <label class="form-label">Password:</label>
+        <input type="password" name="password" class="form-control" [(ngModel)]="password"  >
+    </div>
+    <br>
+    <button class="btn btn-primary" (click)="login()">Login</button>
+
+    <div *ngIf="loginFailed" class="text-center">
+        <h4 >Invalid Credentials</h4>
+        </div>
+        <br>
+        <div *ngIf="loginSuccess" class="text-center">
+            <h4>Welcome {{ username }}!!</h4>
+        </div>
+<br>    
+    <div *ngIf="loginFailed || loginSuccess" class="text-center">
+        <h4>Go Back</h4>
+    </div>
+    </div>
+
+
+
+
+<br><br>
+
+    <div class="container">
+        <h1 class="text-center" style="color: orange;"  >May I help you ?</h1>
+        <p class="text-center">Enter the book name:
+        </p>
+        <input type="text" class="form-control" #box (keyup)="0">
+        <p class="text-center" style="color: orange;" >{{ box.value }}</p>
+    </div>
+
+    <div class="container">
+        <input type="text">
+        <br>
+        <div>Hello,{{ name }}</div>
+    </div>
+   
